@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin: "https://studynotion-edtech-project-3fsv.onrender.com/api/v1",
+		origin: "*",
 		credentials: true,
 	})
 );
