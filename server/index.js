@@ -27,7 +27,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin: 'https://studynotion-frontend-gold.vercel.app', // Vercel domain
+		origin: '*', // Vercel domain
     methods: 'GET,POST,PUT,DELETE',
 		credentials: true,
 	})
