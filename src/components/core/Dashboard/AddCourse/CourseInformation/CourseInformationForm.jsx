@@ -70,7 +70,8 @@ export default function CourseInformationForm() {
       currentValues.courseBenefits !== course.whatYouWillLearn ||
       currentValues.courseCategory._id !== course.category._id ||
       currentValues.courseRequirements.toString() !==
-        course.instructions.toString()
+        course.instructions.toString()||
+      currentValues.courseImage !== course.thumbnail
       
     ) {
       return true
